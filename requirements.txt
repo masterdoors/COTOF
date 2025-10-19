@@ -1,0 +1,11 @@
+git+https://github.com/IINemo/isanlp.git 
+transformers==4.53.0
+sentence-transformers==5.0.0
+sentencepiece==0.2.0
+razdel==0.5.0
+spacy==3.4.3
+spacy-legacy==3.0.12
+spacy-loggers==1.0.5
+ufal.chu_liu_edmonds==1.0.3
+ufal.udpipe==1.2.0.3
+./top2vec
