@@ -120,7 +120,7 @@ class Annotator:
     
     
         texts = [(t,ti) for t,ti,s in sorted(texts,key=lambda item: item[2],reverse=True)]
-        print(len(texts))
+        #print(len(texts))
         sentences = []
         for text,title in texts[:5]:
                 sentences_ = []

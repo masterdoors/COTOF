@@ -51,7 +51,7 @@ def grab_arxiv_txt(titles):
                             title_res = G.search(meta["202"].lower().strip(), threshold=0.7)
                             if len(title_res) > 0:
                                 to_extract[name] = title_res[0][0]    
-        logger.info("To extract from arXiv: ", str(len(to_extract)), str(cntr202))                        
+        logger.info("To extract from arXiv: " + str(len(to_extract)) + str(cntr202))                        
         with tarfile.open(os.path.join(arx_dir, arh), 'r:gz') as tar:
             for member in tqdm(tar):
                 if member.isfile():
