@@ -12,3 +12,4 @@ This repository contains source files, notebook, and some datasets for "Dmitry D
 * top2vec - slightly modified top2vec that supports batch vector quering and has less RAM consumption.
 * pipeline.py - demo pipeline that finds, evaluate and summarizes novel topics in ICLR2017-2019
 * test_on_standard_ds.py - experiments with different phrase builders for Top2Vec
+* run_all_summ_models.py - summarization experiments
