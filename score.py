@@ -72,7 +72,7 @@ class Scorer:
         
         top2score = {}
         for i, row in df.iterrows():
-            _,_,ts,tn = topic_model.query_topics(row["text"], 1,reduced = True)
+            _,_,ts,tn = topic_model.query_topics(row["text"], 1,reduced = False)
             txt = row['review']
             qtags = row["review"].count("?")
          
