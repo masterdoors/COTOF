@@ -68,9 +68,10 @@ if __name__ == "__main__":
                     if dist > 0 and p_values < 0.05:
                         found = True   
                 if not found:
-                    if np.asarray(topic_scores[n]).mean() > 1.0:
-                        logger.info("New topic:")
-                        logger.info(annotator.get_annotation(w,80,topic_model,rews['title'].to_list(),rews['text'].to_list()))
+                    if n in topic_scores:
+                        if np.asarray(topic_scores[n]).mean() > 1.0:
+                            logger.info("New topic:")
+                            logger.info(annotator.get_annotation(w,80,topic_model,rews['title'].to_list(),rews['text'].to_list()))
                         
         prev_words = topic_words
         prev_scores = word_scores
